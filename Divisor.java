@@ -5,6 +5,7 @@ public class Divisor {
         return (b%a)==0;
     }
 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         System.out.print("Introduce 2 numeros: ");
