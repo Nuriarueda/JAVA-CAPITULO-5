@@ -13,7 +13,6 @@ public class Factorial {
         Scanner sc = new Scanner (System.in);
         System.out.print("Dime un numero: ");
         int num = sc.nextInt();
-        long f = factorial(num);
 
         System.out.println("El factorial de " + num + " es " + factorial(num));
         sc.close();
