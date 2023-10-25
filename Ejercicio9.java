@@ -9,7 +9,17 @@ public class Ejercicio9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
 
-        
+        int numDigitos = 1, n, numIntroducido;
+        System.out.print("Introduce un numero y te dire cuantos digitos tiene: ");
+        numIntroducido = Integer.parseInt(sc.nextLine());
+        n = numIntroducido;
+        while (n>10){
+            n/=10;
+           numDigitos++;
+        }
+
+        System.out.println("El numero que has introducido tiene " + numDigitos + " digitos" );
+                 
         sc.close();
     }
 }
