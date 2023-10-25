@@ -11,9 +11,7 @@ public class Ejercicio10 {
         double numeroIntroducido = 0;
         double suma = 0;
         
-        System.out.println("Este programa calcula la media de los números positivos introducidos.");
-        System.out.println("Para parar, introduzca un número negativo.");
-        System.out.println("Vaya introduciendo números:");
+        System.out.print("Vaya introduciendo números:");
     
         while (numeroIntroducido >= 0) {
           numeroIntroducido = Double.parseDouble(sc.nextLine());
