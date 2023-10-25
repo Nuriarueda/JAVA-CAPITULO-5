@@ -7,7 +7,18 @@ import java.util.Scanner;
 public class Ejercicio15 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-        
+
+        int potencia = 1;
+        System.out.print("Introduce una base: ");
+        int base = Integer.parseInt(sc.nextLine());
+
+        System.out.print("Introduce un exponente: ");
+        int exponente = Integer.parseInt(sc.nextLine());
+
+        for (int i=1; i<=exponente; i++){
+            potencia = potencia*base;
+            System.out.println(base + "^" + i + " = " + potencia);
+        }
         sc.close();
     }
 }
