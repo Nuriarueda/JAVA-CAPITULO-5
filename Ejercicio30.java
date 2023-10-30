@@ -7,6 +7,19 @@ import java.util.Scanner;
 public class Ejercicio30 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        System.out.println("Por favor, introduzca la primera hora.");
+        System.out.print("Dia: ");
+        int dia = Integer.parseInt(sc.nextLine());
+        System.out.print("Hora: ");
+        int hora = Integer.parseInt(sc.nextLine());
+
+        System.out.println("Por favor, introduzca la segunda hora.");
+        System.out.print("Dia: ");
+        int dia2 = Integer.parseInt(sc.nextLine());
+        System.out.print("Hora: ");
+        int hora2 = Integer.parseInt(sc.nextLine());
+        
         sc.close();
     }
 }
