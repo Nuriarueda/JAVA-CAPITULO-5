@@ -19,7 +19,11 @@ public class Ejercicio30 {
         int dia2 = Integer.parseInt(sc.nextLine());
         System.out.print("Hora: ");
         int hora2 = Integer.parseInt(sc.nextLine());
-        
+
+        for (int i = dia; i < hora2; i++){
+            
+        }
+
         sc.close();
     }
 }
