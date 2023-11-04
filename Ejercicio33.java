@@ -16,6 +16,7 @@ public class Ejercicio33 {
                 System.out.print(" ");
             }
         }
+        
         sc.close();
     }
 }
