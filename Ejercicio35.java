@@ -27,6 +27,7 @@ public class Ejercicio35 {
 
                 System.out.print("*");
                 System.out.println();
+                
                 altura++;
                 espaciosPorDelante++;
                 espaciosInternos -= 2;
