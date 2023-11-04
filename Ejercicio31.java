@@ -16,6 +16,7 @@ public class Ejercicio31 {
         for (int i = 0; i < altura / 2 + 1; i++) {
             System.out.print("* ");
         }
+        
         sc.close();
     }
 }
