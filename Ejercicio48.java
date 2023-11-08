@@ -6,6 +6,48 @@ import java.util.Scanner;
 public class Ejercicio48 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
+
+        System.out.print("Introduzca un número entero: ");
+        long numero = Long.parseLong(sc.nextLine());
+        long aux;
+        boolean encontrado;
+
+        System.out.print("Numeros que aparecen: ");
+        for (int i = 0; i < 10; i++) {
+            encontrado = false;
+            aux = numero;
+
+            while (aux > 0) {
+                if (aux % 10 == i) {
+                    encontrado = true;
+                }
+                aux /= 10;
+            } 
+
+            if (encontrado) {
+                System.out.print(i + " ");
+            }
+
+        }
+
+        System.out.print("\nDígitos que no aparecen: ");
+        
+        for (int i = 0; i < 10; i++) {
+            encontrado = false;
+            aux = numero;
+
+            while (aux > 0) {
+                if (aux % 10 == i) {
+                    encontrado = true;
+                }
+                aux /= 10;
+            }
+            
+            if (!encontrado) {
+                System.out.print(i + " ");
+            }
+        }        
+            
         sc.close();
     }
 }
