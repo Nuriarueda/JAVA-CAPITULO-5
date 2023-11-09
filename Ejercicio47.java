@@ -17,13 +17,13 @@ public class Ejercicio47 {
             System.out.println("MMMMMM");
 
             for (int i = 0; i < alturaAux; i++) {
-                System.out.println("M M");
+                System.out.println("M  M");
             }
 
             System.out.println("MMMMMM");
 
             for (int i = 0; i < alturaAux; i++) {
-                System.out.println("M M");
+                System.out.println("M  M");
             }   
 
             System.out.println("MMMMMM");
