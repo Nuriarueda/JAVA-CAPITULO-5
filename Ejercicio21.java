@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class Ejercicio21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-        double suma = 0;
         int num = 0;
         int numeroIntroducido = 0;
 
