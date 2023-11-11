@@ -7,15 +7,63 @@ public class Ejercicio40 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
 
-        System.out.print("Introduce la altura del rombo: ");
-        int altura = Integer.parseInt(sc.nextLine());
+        System.out.println("Introduzca la altura del rombo");
+        int altura= sc.nextInt();
+        int j=0;
+        int g=0;
 
-        for (int i = 1; i <= altura; i++){
-            for (int j = 1; j <= altura; j++){
-                
+        if(altura>4 || altura%2!=0){
+            
+            for(int i=1;i<=altura;i++){
+
+                while(g<altura-2){
+                    System.out.print(" ");
+                    g++;
+                }
+                if(altura==1){
+                    System.out.print(" "+"*");
+                }
+                System.out.print("*");
+
+                for(int k=altura;k>altura-i+2;k--){
+                    System.out.print(" ");
+                }
+
+                for(int k=altura;k>=altura-i+2;k--){
+                    System.out.print(" ");
+                }
+            
+                if(i!=1){
+                System.out.print("*");
+                }
+                g=i-1;
+                System.out.println("");
             }
-        }
+            for(int i=1;i<=altura;i++){
 
+                while(j>0){
+                    System.out.print(" ");
+                    j--;
+                }
+                System.out.print("*");
+
+                for(int k=1;k<=altura-i;k++){
+                    System.out.print(" ");
+                }
+                for(int k=1;k<altura-i;k++){
+                    System.out.print(" ");
+                }
+                if(altura!=i){
+                System.out.println("*");
+                }
+                j=i;
+
+            }
+            
+        }else{
+            System.out.println("Error");
+        }
+        
         sc.close();
     }
 }
