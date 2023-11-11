@@ -9,9 +9,21 @@ public class Ejercicio41 {
         System.out.print("Introduce un numero: ");
         long num = Long.parseLong(sc.nextLine());
 
-        for (int i = 0; i <= num; i++){
-            
+        long num2 = num;
+        int nImpares = 0;
+        int nPares = 0;
+        
+        while (num > 0) {
+            if ((num%10)%2==0) {
+                nPares++;
+            } else {
+                nImpares++;
+            }
+
+            num/=10;
         }
+
+        System.out.println("El " + num2 + " tiene " + nPares + " numeros pares y " + nImpares + " impares");
         sc.close();
     }
 }

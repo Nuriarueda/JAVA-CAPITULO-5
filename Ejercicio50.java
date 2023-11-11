@@ -10,6 +10,65 @@ import java.util.Scanner;
 public class Ejercicio50 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
+
+        System.out.println("Con este programa dibujaremos el 155 con asteriscos y nos diras la altura y los espacios ");
+        System.out.println("Diga la altura, minimo 5");
+        int altura=sc.nextInt();
+        System.out.println("Diga los espacios, minimo 1");
+        int espacios=sc.nextInt();
+
+        for(int i=1;i<=altura;i++){
+            if(i<=3){
+                System.out.print("*");
+                for(int j=1;j<=espacios;j++){
+                    System.out.print(" ");
+                }
+                if(i==1 || i==3 || i==altura){
+                    System.out.print("****");
+                }else{
+                    System.out.print("*");
+                }
+                if(i==1 || i==3 || i==altura){
+                    for(int j=1;j<=espacios;j++){
+                        System.out.print(" ");
+                    }
+                }else{
+                    for(int j=1;j<=espacios;j++){
+                        System.out.print(" ");
+                    }
+                    System.out.print("   ");
+                }    
+                if(i==1 || i==3 || i==altura){
+                    System.out.print("****");
+                }else{
+                    System.out.print("*");
+                }
+                System.out.println("");
+            }else{
+                System.out.print("*");
+                for(int j=1;j<=espacios;j++){
+                    System.out.print(" ");
+                }
+                if(i==altura){
+                    System.out.print("***");
+                }else{
+                    System.out.print("   ");
+                }
+                System.out.print("*");
+                for(int j=1;j<=espacios;j++){
+                    System.out.print(" ");
+                }
+                if(i==altura){
+                    System.out.print("***");
+                }else{
+                    System.out.print("   ");
+                }
+                System.out.print("*");
+                System.out.println("");
+            }    
+
+        }
+
         sc.close();
     }
 }
