@@ -9,6 +9,18 @@ public class Ejercicio20 {
         System.out.print("Introduce el caracter con el que se pintara la piramide: ");
         String caracter = sc.nextLine();
 
+        for (int i = alt; i >= 1; i --){
+            for (int j = i; j < alt; j++){
+                System.out.print(" ");
+            }
+
+            for (int k = 1; k < i*2; k++){
+                System.out.print(caracter);
+            }
+
+            System.out.println(" ");
+        }
+
         sc.close();
     }
 }
