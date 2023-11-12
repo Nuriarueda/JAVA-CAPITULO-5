@@ -35,6 +35,7 @@ public class PruebaExamen2 {
 
         System.out.println();
         System.out.print("| ");
+        
         for (int i = 0; i < cont; i++) {
             System.out.print(numVoltea%10+" | ");
 
